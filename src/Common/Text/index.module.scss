@@ -1,0 +1,42 @@
+$text-color-primary: black;
+$text-color-secondary: silver;
+
+@mixin text-size-s {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin text-size-m {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin text-size-l {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text {
+  font-family: sans-serif;
+
+  &_size {
+    &_s {
+      @include text-size-s;
+    }
+    &_m {
+      @include text-size-m;
+    }
+    &_l {
+      @include text-size-l;
+    }
+  }
+
+  &_view {
+    &_primary {
+      color: $text-color-primary;
+    }
+    &_secondary {
+      color: $text-color-secondary;
+    }
+  }
+}
