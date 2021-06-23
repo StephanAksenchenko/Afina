@@ -1,0 +1,14 @@
+$card-box-shadow: 4px 4px 4px 0px rgba(34, 60, 80, 0.2);
+$card-box-shadow-hover: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+$transitions: 0.2s ease-in;
+$card-padding: 24px;
+
+.card {
+  padding: $card-padding;
+  transition: $transitions;
+  box-shadow: $card-box-shadow;
+
+  &:hover {
+    box-shadow: $card-box-shadow-hover;
+  }
+}
