@@ -1,0 +1,43 @@
+@mixin h1-size {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+@mixin h2-size {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+@mixin h3-size {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+// For all headers
+.hx {
+  font-family: sans-serif;
+
+  &_align {
+    &_left {
+      text-align: left;
+    }
+    &_center {
+      text-align: center;
+    }
+    &_right {
+      text-align: right;
+    }
+  }
+}
+
+.h1 {
+  @include h1-size;
+}
+
+.h2 {
+  @include h2-size;
+}
+
+.h3 {
+  @include h3-size;
+}
