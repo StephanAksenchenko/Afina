@@ -1,0 +1,26 @@
+@import "../../Decorators/index.scss";
+
+.buttonLink {
+  display: inline-block;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  @include border-radius;
+  transition: $transition;
+  border: 1px solid black;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: unset;
+  }
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
