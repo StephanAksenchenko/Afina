@@ -1,0 +1,7 @@
+// VARIABLES
+$transition: 0.2s ease-in;
+
+// MIXINS
+@mixin interactive {
+  cursor: pointer;
+}
