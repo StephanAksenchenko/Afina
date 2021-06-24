@@ -1,5 +1,6 @@
-$nav-margin-bottom: 24px;
-
-.nav {
-  margin-bottom: $nav-margin-bottom;
+.layout {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: max-content auto;
+  min-height: 100vh;
 }

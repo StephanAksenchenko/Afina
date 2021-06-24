@@ -6,7 +6,7 @@ type Align = "left" | "center" | "right";
 
 export interface IProps {
   children: ReactNode;
-  align: Align;
+  align?: Align;
 }
 
 export const H1: React.FC<IProps> = ({ children, align = "left" }: IProps) => {

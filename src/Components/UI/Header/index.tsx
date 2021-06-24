@@ -1,8 +1,13 @@
 import styles from "./index.module.scss";
+import cn from "classnames";
 
-export const Header: React.FC = () => {
+export interface IProps {
+  className?: string;
+}
+
+export const Header: React.FC<IProps> = ({ className }: IProps) => {
   return (
-    <header className={styles.header}>
+    <header className={cn(styles.header, className)}>
       <Logo />
       <Links />
     </header>

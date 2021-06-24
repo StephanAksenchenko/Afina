@@ -8,8 +8,8 @@ export interface IProps {
 
 export const Main: React.FC<IProps> = ({ children }: IProps) => {
   return (
-    <div>
-      <Header className={styles.nav} />
+    <div className={styles.layout}>
+      <Header />
       {children}
     </div>
   );
