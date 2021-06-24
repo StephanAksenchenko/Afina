@@ -8,6 +8,7 @@ type FlexDirection = "column" | "row";
 
 export interface IProps {
   children: React.ReactNode;
+  style?: object;
   justifyContent?: JustifyContent;
   alignItems?: AlignItems;
   flexDirection?: FlexDirection;
@@ -18,9 +19,11 @@ export const Flexbox: React.FC<IProps> = ({
   justifyContent = "start",
   alignItems = "flex-start",
   flexDirection = "column",
+  style,
 }: IProps) => {
   return (
     <div
+      style={style}
       className={cn(
         styles.flexbox,
         styles[`flexbox_justify-content_${justifyContent}`],
