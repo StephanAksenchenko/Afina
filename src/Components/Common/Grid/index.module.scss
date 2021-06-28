@@ -1,0 +1,25 @@
+.grid {
+  display: grid;
+
+  &_cols {
+    &_1 {
+      grid-template-columns: 1fr;
+    }
+
+    &_4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &_col-gap {
+    &_m {
+      column-gap: 24px;
+    }
+  }
+
+  &_row-gap {
+    &_m {
+      row-gap: 24px;
+    }
+  }
+}
