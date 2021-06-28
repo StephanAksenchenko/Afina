@@ -39,4 +39,8 @@ $text-color-secondary: silver;
       color: $text-color-secondary;
     }
   }
+
+  &_italic {
+    font-style: italic;
+  }
 }

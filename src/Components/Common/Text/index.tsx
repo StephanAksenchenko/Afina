@@ -7,21 +7,24 @@ type View = "primary" | "secondary";
 
 export interface IProps {
   children: ReactNode;
-  size: Size;
-  view: View;
+  size?: Size;
+  view?: View;
+  italic?: boolean;
 }
 
-export const Text: React.FC<IProps> = ({
+export const Text = ({
   children,
   size = "m",
   view = "primary",
+  italic = false,
 }: IProps) => {
   return (
     <p
       className={cn(
         css.text,
         css[`text_size_${size}`],
-        css[`text_view_${view}`]
+        css[`text_view_${view}`],
+        { [css.text_italic]: italic }
       )}
     >
       {" "}
