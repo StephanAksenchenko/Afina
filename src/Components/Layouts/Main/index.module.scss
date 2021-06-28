@@ -2,5 +2,19 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: max-content auto;
+  grid-template-areas:
+    "navigation"
+    "content";
+  row-gap: 24px;
   min-height: 100vh;
+}
+
+.navigation {
+  grid-area: navigation;
+}
+
+.content {
+  grid-area: content;
+  padding-left: 24px;
+  padding-right: 24px;
 }

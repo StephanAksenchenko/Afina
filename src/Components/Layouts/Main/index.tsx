@@ -9,8 +9,10 @@ export interface IProps {
 export const Main: React.FC<IProps> = ({ children }: IProps) => {
   return (
     <div className={styles.layout}>
-      <Header />
-      {children}
+      <div className={styles.navigation}>
+        <Header />
+      </div>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };
