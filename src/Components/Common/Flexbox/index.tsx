@@ -2,7 +2,7 @@ import React from "react";
 import cn from "classnames";
 import styles from "./index.module.scss";
 
-type JustifyContent = "start" | "center";
+type JustifyContent = "start" | "center" | "space-between";
 type AlignItems = "flex-start" | "center";
 type FlexDirection = "column" | "row";
 
