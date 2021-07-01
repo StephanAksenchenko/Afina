@@ -1,0 +1,14 @@
+@import "../Theme/index.scss";
+@import "../../Decorators/index.scss";
+
+.root {
+  @include text-size-m;
+  @include border-radius;
+  padding: $indent-m;
+  background-color: $background-normal;
+}
+
+.termin {
+  @include text-size-l;
+  text-transform: capitalize;
+}
