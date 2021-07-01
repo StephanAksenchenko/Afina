@@ -1,0 +1,10 @@
+@import "../Theme/index.scss";
+
+.list {
+  padding-left: 0;
+  &_size {
+    &_m {
+      @include text-size-m;
+    }
+  }
+}
