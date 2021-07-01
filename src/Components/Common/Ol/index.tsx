@@ -5,7 +5,7 @@ type Size = "s" | "m" | "l";
 
 export interface IOl {
   list: string[];
-  size: Size;
+  size?: Size;
 }
 
 export const Ol = ({ list, size = "m" }: IOl) => {

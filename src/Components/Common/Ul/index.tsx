@@ -5,7 +5,7 @@ type Size = "s" | "m" | "l";
 
 export interface IList {
   list: string[];
-  size: Size;
+  size?: Size;
 }
 
 export const Ul = ({ list, size = "m" }: IList) => {
