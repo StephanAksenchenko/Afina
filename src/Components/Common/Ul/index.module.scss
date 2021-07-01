@@ -11,7 +11,11 @@
 }
 
 .item {
+  position: relative;
+  padding-left: $indent-m;
   &::before {
+    position: absolute;
+    left: 0;
     content: "—";
   }
 }

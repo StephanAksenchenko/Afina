@@ -1,10 +1,18 @@
 @import "../Theme/index.scss";
 
 .list {
+  counter-reset: section;
+  list-style-type: none;
   padding-left: 0;
+
   &_size {
     &_m {
       @include text-size-m;
     }
   }
+}
+
+.item::before {
+  counter-increment: section;
+  content: counters(section, "") ".";
 }

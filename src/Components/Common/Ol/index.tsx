@@ -12,7 +12,10 @@ export const Ol = ({ list, size = "m" }: IOl) => {
   return (
     <ol className={cn(style.list, style[`list_size_${size}`])}>
       {list.map((elem, i) => (
-        <li key={i}> {elem}</li>
+        <li className={style.item} key={i}>
+          {" "}
+          {elem}
+        </li>
       ))}
     </ol>
   );
