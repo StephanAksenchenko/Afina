@@ -1,0 +1,17 @@
+@import "../Theme/index.scss";
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  &_size {
+    &_m {
+      @include text-size-m;
+    }
+  }
+}
+
+.item {
+  &::before {
+    content: "—";
+  }
+}
