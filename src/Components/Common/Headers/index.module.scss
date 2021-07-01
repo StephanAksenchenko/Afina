@@ -1,17 +1,4 @@
-@mixin h1-size {
-  font-size: 40px;
-  line-height: 52px;
-}
-
-@mixin h2-size {
-  font-size: 32px;
-  line-height: 42px;
-}
-
-@mixin h3-size {
-  font-size: 24px;
-  line-height: 36px;
-}
+@import "../Theme/index.scss";
 
 // For all headers
 .hx {
@@ -31,13 +18,13 @@
 }
 
 .h1 {
-  @include h1-size;
+  @include text-size-xxl;
 }
 
 .h2 {
-  @include h2-size;
+  @include text-size-xl;
 }
 
 .h3 {
-  @include h3-size;
+  @include text-size-l;
 }

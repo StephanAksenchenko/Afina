@@ -1,23 +1,7 @@
-$text-color-primary: black;
-$text-color-secondary: silver;
-
-@mixin text-size-s {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-@mixin text-size-m {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-@mixin text-size-l {
-  font-size: 24px;
-  line-height: 32px;
-}
+@import "../Theme/index.scss";
 
 .text {
-  font-family: sans-serif;
+  font-family: $font-family;
 
   &_size {
     &_s {

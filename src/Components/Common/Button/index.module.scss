@@ -1,23 +1,24 @@
 @import "../../Decorators/index.scss";
+@import "../Theme/index.scss";
 
 .buttonLink {
   display: inline-block;
   text-decoration: none;
-  background-color: black;
-  color: white;
+  background-color: $background-dark;
+  color: $text-color-white;
   padding: 10px 20px;
   @include border-radius;
   transition: $transition;
-  border: 1px solid black;
-  margin-right: 20px;
+  border: $border;
+  margin-right: $indent-m;
 
   &:last-child {
     margin-right: unset;
   }
 
   &:hover {
-    background-color: white;
-    color: black;
+    background-color: $background-light;
+    color: $text-color-primary;
   }
 
   &:active {

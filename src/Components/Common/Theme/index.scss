@@ -1,0 +1,42 @@
+// Indents
+$indent-m: 24px;
+
+// TEXT
+// size
+@mixin text-size-s {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin text-size-m {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin text-size-l {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin text-size-xl {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+@mixin text-size-xxl {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+// color
+$text-color-primary: black;
+$text-color-secondary: silver;
+$text-color-white: white;
+
+// family
+$font-family: sans-serif;
+
+//Background
+$background-normal: rgba(192, 192, 192, 0.829);
+$background-dark: black;
+$background-light: white;

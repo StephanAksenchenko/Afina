@@ -1,3 +1,5 @@
+@import "../Theme/index.scss";
+
 .grid {
   display: grid;
 
@@ -13,13 +15,13 @@
 
   &_col-gap {
     &_m {
-      column-gap: 24px;
+      column-gap: $indent-m;
     }
   }
 
   &_row-gap {
     &_m {
-      row-gap: 24px;
+      row-gap: $indent-m;
     }
   }
 }
